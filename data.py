@@ -6,7 +6,7 @@ DATA_DIR = "data"
 
 def load_data(fname):
     data = np.genfromtxt(
-        f"{DATA_DIR}/{fname}",
+        fname,
         delimiter=" ",
         dtype=[("name", "S50"), ("race", "S1")],
         converters={0: lambda s: s.upper()},

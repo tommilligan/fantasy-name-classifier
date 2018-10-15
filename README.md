@@ -15,7 +15,7 @@ pip install -r requirements.txt
 Train model on initial data:
 
 ```
-python train.py
+python train.py data/train.txt
 ```
 
 This will serialize a model into the `data` directory for later use.
@@ -23,6 +23,6 @@ This will serialize a model into the `data` directory for later use.
 We can now run this model over any input file in the correct format.
 
 ```
-python test.py validate.txt
-python test.py final.txt
+python test.py data/validate.txt
+python test.py data/final.txt
 ```
