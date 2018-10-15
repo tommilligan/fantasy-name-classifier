@@ -1,1 +1,4 @@
 __pycache__/
+
+# Cached model files
+*.joblib
